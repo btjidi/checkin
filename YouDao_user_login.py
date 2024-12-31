@@ -136,7 +136,7 @@ class Youdao:
         cookie= self.login()
         massage= self.signin(cookie)
         massage+= self.store_redis(cookie)
-        return self.user + massage
+        return self.user
 
 if __name__ == "__main__":
     # if youdao_cookie != None:
